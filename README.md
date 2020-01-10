@@ -57,7 +57,7 @@ index.html:64: (po4a::xml)
     - warrant-canary.html
     - windows10.html
   - footer.html
-  - nav.html
+  - ~nav.html~
 - pages
   - about.html (exclude)
   - donate.html (exclude)
