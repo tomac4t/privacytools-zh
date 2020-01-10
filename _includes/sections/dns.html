@@ -1,0 +1,554 @@
+<h1 id="dns" class="anchor"><a href="#dns"><i class="fas fa-link anchor-icon"></i></a> Encrypted Domain Name System (DNS) Resolvers</h1>
+
+<div class="alert alert-warning" role="alert">
+  <strong>Note: Using an encrypted DNS resolver will not make you anonymous, nor hide your internet traffic from your Internet Service Provider. But, it will prevent DNS hijacking, and make your DNS requests harder for third parties to eavesdrop on and tamper with. If you are currently using Google's DNS resolver, you should pick an alternative here.</strong>
+</div>
+
+<div class="table-responsive">
+  <table class="table sortable-theme-bootstrap" data-sortable>
+    <thead>
+      <tr>
+        <th data-sorted="true" data-sorted-direction="ascending">DNS Provider</th>
+        <th data-sortable="true">Server Locations</th>
+        <th data-sortable="false">Privacy Policy</th>
+        <th data-sortable="true">Type</th>
+        <th data-sortable="true">Logging</th>
+        <th data-sortable="true">Protocols</th>
+        <th data-sortable="true">DNSSEC</th>
+        <th data-sortable="true">QNAME Minimization</th>
+        <th data-sortable="true">Filtering</th>
+        <th data-sortable="true">Source Code</th>
+        <th data-sortable="true">Hosting Provider</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td data-value="AdGuard">
+          <a href="https://adguard.com/en/adguard-dns/overview.html">AdGuard</a>
+        </td>
+        <td>Anycast (based in
+          <span class="no-text-wrap">
+            <span class="flag-icon flag-icon-cy"></span>
+              Cyprus)
+          </span>
+        </td>
+        <td>
+          <a
+            class="btn-secondary btn-icon"
+            href="https://adguard.com/en/privacy/dns.html">
+            <span class="fas fa-globe"></span>
+          </a>
+        </td>
+        <td>Commercial</td>
+        <td>No</td>
+        <td>DoH, DoT, DNSCrypt</td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>
+          <span class="no-text-wrap">
+            Ads, trackers,
+          </span>
+          <span class="no-text-wrap">
+            malicious domains
+          </span>
+        </td>
+        <td>
+          <a
+            class="btn-secondary btn-icon"
+            href="https://github.com/AdguardTeam/AdGuardDNS/">
+            <span class="fas fa-globe"></span>
+          </a>
+        </td>
+        <td>
+          <span class="no-text-wrap">
+            <a href="https://flops.ru/en/about.html">Serveroid, LLC</a>
+          </span>
+        </td>
+      </tr>
+
+      <tr>
+        <td data-value="BlahDNS">
+          <a href="https://blahdns.com/">BlahDNS</a>
+        </td>
+        <td>
+          <span class="no-text-wrap">
+            <span class="flag-icon flag-icon-fi"></span>
+            Finland,
+          </span>
+          <span class="no-text-wrap">
+            <span class="flag-icon flag-icon-de"></span>
+            Germany,
+          </span>
+          <span class="no-text-wrap">
+            <span class="flag-icon flag-icon-jp"></span>
+            Japan
+          </span>
+        </td>
+        <td>
+          <div
+            class="btn-secondary btn-icon"
+            title="&quot;No logs.&quot;"
+            data-toggle="tooltip"
+            data-placement="bottom">
+            <span class="fas fa-globe"></span>
+          </div>
+        </td>
+        <td>Hobby Project</td>
+        <td>No</td>
+        <td data-value="dot/443">
+          <span class="no-text-wrap">
+            DoH,
+            <span data-toggle="tooltip" data-placement="bottom" data-original-title="Supports port 443 in addition to 853">
+              DoT <span class="fas fa-info-circle fa-sm text-secondary"></span>,
+            </span>
+          </span>
+          DNSCrypt
+        </td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>
+          <span class="no-text-wrap">
+            Ads, trackers,
+          </span>
+          <span class="no-text-wrap">
+            malicious domains
+            <span class="badge badge-warning" data-toggle="tooltip" data-original-title="And some wildcard and IDN domains."><a href="https://github.com/ookangzheng/blahdns#default-blocked-wildcard-domain"><i class="fas fa-exclamation-triangle"></i></a></span>
+          </span>
+        </td>
+        <td>
+          <a
+            class="btn-secondary btn-icon"
+            href="https://github.com/ookangzheng/blahdns/">
+            <span class="fas fa-globe"></span>
+          </a>
+        </td>
+        <td>
+          <span class="no-text-wrap">
+            <a href="https://www.choopa.com/">Choopa, LLC</a>,
+          </span>
+          <span class="no-text-wrap">
+            <a href="https://www.datacenterlight.ch/">Data Center Light</a>,
+          </span>
+          <span class="no-text-wrap">
+            <a href="https://www.hetzner.com/">Hetzner Online GmbH</a>
+          </span>
+        </td>
+      </tr>
+
+      <tr>
+        <td data-value="Cloudflare">
+          <a href="https://developers.cloudflare.com/1.1.1.1/setting-up-1.1.1.1/">Cloudflare</a> <span class="badge badge-warning" data-toggle="tooltip" title="Cloudflare is one of the world's largest networks, and a problem considering anonymity and decentralization."><a href="https://codeberg.org/crimeflare/cloudflare-tor/"><i class="fas fa-exclamation-triangle"></i></a></span>
+        </td>
+        <td>Anycast (based in
+          <span class="no-text-wrap">
+            <span class="flag-icon flag-icon-us"></span>
+            US)
+          </span>
+        </td>
+        <td>
+          <a
+            class="btn-secondary btn-icon"
+            href="https://www.cloudflare.com/privacypolicy/">
+            <span class="fas fa-globe"></span>
+          </a>
+        </td>
+        <td>Commercial</td>
+        <td><a data-toggle="tooltip" data-placement="bottom" data-original-title='"We will collect limited DNS query data that is sent to the resolvers. This data does not contain user IP addresses or any other personally identifiable information, and the bulk of the data is only stored for 24 hours."' href="https://developers.cloudflare.com/1.1.1.1/commitment-to-privacy/privacy-policy/privacy-policy/">Some</a></td>
+        <td>DoH, DoT</td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>No</td>
+        <td>?</td>
+        <td>Self</td>
+      </tr>
+
+      <tr>
+        <td data-value="CZ.NIC">
+          <a href="https://www.nic.cz/odvr/">CZ.NIC</a>
+        </td>
+        <td>
+          <span class="no-text-wrap">
+            <span class="flag-icon flag-icon-cz"></span>
+            Czech Republic
+          </span>
+        </td>
+        <td>
+          <div
+            class="btn-secondary btn-icon"
+            title="&quot;CZ.NIC resolvers neither collect any personal data nor gather information on pages where your computer sends personal data.&quot;"
+            data-toggle="tooltip"
+            data-placement="bottom">
+            <span class="fas fa-globe"></span>
+          </a>
+        </td>
+        <td><a data-toggle="tooltip" data-placement="bottom" data-original-title='"CZ.NIC is an interest association of legal entities, founded in 1998 by leading providers of Internet services."' href="https://www.nic.cz/page/351/about-association/">Association</a></td>
+        <td>No</td>
+        <td>DoH, DoT</td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td data-value="No">?</td>
+        <td>?</td>
+        <td>Self</td>
+      </tr>
+
+      <tr>
+        <td data-value="dnswarden">
+          <a href="https://github.com/bhanupratapys/dnswarden/blob/master/README.md">dnswarden</a>
+        </td>
+        <td>
+          <span class="no-text-wrap">
+            <span class="flag-icon flag-icon-de"></span>
+            Germany
+          </span>
+        </td>
+        <td>
+          <a
+            class="btn-secondary btn-icon"
+            href="https://github.com/bhanupratapys/dnswarden/blob/master/README.md#privacy-policy-and-tc">
+            <span class="fas fa-globe"></span>
+          </a>
+        </td>
+        <td>Hobby Project</td>
+        <td>No</td>
+        <td data-value="dot/443">
+          <span class="no-text-wrap">
+            DoH,
+            <span data-toggle="tooltip" data-placement="bottom" data-original-title="Supports port 443 in addition to 853">
+              DoT <span class="fas fa-info-circle fa-sm text-secondary"></span>,
+            </span>
+          </span>
+          DNSCrypt
+        </td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>
+          <span class="no-text-wrap">
+            Based on server choice
+          </span>
+        </td>
+        <td>?</td>
+        <td>
+          <span class="no-text-wrap">
+            <a href="https://www.hetzner.com/">Hetzner Online GmbH</a>
+          </span>
+        </td>
+      </tr>
+
+      <tr>
+        <td data-value="Foundation for Applied Privacy">
+          <a href="https://appliedprivacy.net/services/dns/">Foundation for Applied Privacy</a>
+        </td>
+        <td>
+          <span class="no-text-wrap">
+            <span class="flag-icon flag-icon-at"></span>
+            Austria
+          </span>
+        </td>
+        <td>
+          <a
+            class="btn-secondary btn-icon"
+            href="https://appliedprivacy.net/privacy-policy">
+            <span class="fas fa-globe"></span>
+          </a>
+        </td>
+        <td>Non-Profit</td>
+        <td><a data-toggle="tooltip" data-placement="bottom" data-original-title='"We do NOT log your IP address or DNS queries during normal operations. We do NOT share query data with third parties that are not directly involved with resolving the query (i.e. sending queries to authoritative nameservers for resolution)."' href="https://appliedprivacy.net/privacy-policy/">Some</a></td>
+        <td data-value="dot/443">
+          <span class="no-text-wrap">
+            DoH,
+            <span data-toggle="tooltip" data-placement="bottom" data-original-title="Supports port 443 in addition to 853">
+              DoT <span class="fas fa-info-circle fa-sm text-secondary"></span>
+            </span>
+          </span>
+        </td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>No</td>
+        <td>?</td>
+        <td>
+          <span class="no-text-wrap">
+            <a href="https://www.ipax.at/">IPAX OG</a>
+          </span>
+        </td>
+      </tr>
+
+      <tr>
+        <td data-value="nextdns">
+          <a href="https://www.nextdns.io/">NextDNS</a>
+        </td>
+        <td>Anycast (based in
+          <span class="no-text-wrap">
+            <span class="flag-icon flag-icon-us"></span>
+            US)
+          </span>
+        </td>
+        <td>
+          <a
+            class="btn-secondary btn-icon"
+            href="https://www.nextdns.io/privacy">
+            <span class="fas fa-globe"></span>
+          </a>
+        </td>
+        <td>Commercial</td>
+        <td>
+          <a data-toggle="tooltip" data-placement="bottom" data-original-title='"Some of the features require some sort of data retention. In that case, we give our users the choice to granularly or completely disable those features (and associated data retention), and we follow up immediately on that promise"' href="https://www.nextdns.io/privacy">Based on user choice</a>
+        </td>
+        <td>DoH, DoT, DNSCrypt</td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>
+          <span class="no-text-wrap">
+            Based on server choice
+          </span>
+        </td>
+        <td>?</td>
+        <td>Self</td>
+      </tr>
+
+      <tr>
+        <td data-value="NixNet">
+          <a href="https://nixnet.xyz/dns/">NixNet</a>
+        </td>
+        <td>
+          <span class="no-text-wrap">
+            Anycast (based in
+            <span class="flag-icon flag-icon-us"></span>
+            US),
+          </span>
+          <span class="no-text-wrap">
+            <span class="flag-icon flag-icon-us"></span>
+            US,
+          </span>
+          <span class="no-text-wrap">
+            <span class="flag-icon flag-icon-lu"></span>
+            Luxembourg
+          </span>
+        </td>
+        <td>
+          <a
+            class="btn-secondary btn-icon"
+            href="https://nixnet.xyz/privacy/">
+            <span class="fas fa-globe"></span>
+          </a>
+        </td>
+        <td>
+          <a data-toggle="tooltip" data-placement="bottom" data-original-title='Part of LibreHosters, "a network of cooperation and solidarity that uses free software to encourage decentralisation through federation and distributed platforms."' href="https://libreho.st/">
+            Informal collective
+          </a>
+        </td>
+        <td>No</td>
+        <td>DoH, DoT</td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>
+          <span class="no-text-wrap">
+            Based on server choice
+          </span>
+        </td>
+        <td>
+          <a
+            class="btn-secondary btn-icon"
+            href="https://git.nixnet.xyz/NixNet/dns">
+            <span class="fas fa-globe"></span>
+          </a>
+        </td>
+        <td>
+          <span class="no-text-wrap">
+            <a href="https://frantech.ca/">FranTech Solutions</a>
+          </span>
+        </td>
+      </tr>
+
+      <tr>
+        <td data-value="PowerDNS">
+          <a href="https://powerdns.org/">PowerDNS</a>
+        </td>
+        <td>
+          <span class="no-text-wrap">
+            <span class="flag-icon flag-icon-nl"></span>
+            The Netherlands
+          </span>
+        </td>
+        <td>
+          <a
+            class="btn-secondary btn-icon"
+            href="https://powerdns.org/doh/privacy.html">
+            <span class="fas fa-globe"></span>
+          </a>
+        </td>
+        <td>Hobby Project</td>
+        <td>No</td>
+        <td>DoH</td>
+        <td>Yes</td>
+        <td>No</td>
+        <td>No</td>
+        <td>
+          <a
+            class="btn-secondary btn-icon"
+            href="https://github.com/PowerDNS/pdns">
+            <span class="fas fa-globe"></span>
+          </a>
+        </td>
+        <td>
+          <span class="no-text-wrap">
+            <a href="https://www.transip.nl/">TransIP B.V. Admin</a>
+          </span>
+        </td>
+      </tr>
+
+      <tr>
+        <td data-value="Quad9">
+          <a href="https://quad9.net/">Quad9</a> <span class="badge badge-warning" data-toggle="tooltip" title="Founders include the Global Cyber Alliance, composed of the City of London Police and Manhattan District Attorney's Office"><i class="fas fa-exclamation-triangle"></i></span>
+        </td>
+        <td>Anycast (based in
+          <span class="no-text-wrap">
+            <span class="flag-icon flag-icon-us"></span>
+            US)
+          </span>
+        </td>
+        <td>
+          <a
+            class="btn-secondary btn-icon"
+            href="https://quad9.net/policy/">
+            <span class="fas fa-globe"></span>
+          </a>
+        </td>
+        <td>Non-Profit</td>
+        <td><a data-toggle="tooltip" data-placement="bottom" data-original-title='"Our normal course of data management does not have any IP address information or other PII logged to disk or transmitted out of the location in which the query was received."' href="https://quad9.net/policy/">Some</a></td>
+        <td>DoH, DoT, DNSCrypt</td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>
+          <span class="no-text-wrap">
+            Malicious domains
+          </span>
+        </td>
+        <td>?</td>
+        <td>
+          Self,
+          <span class="no-text-wrap">
+            <a href="https://www.pch.net/">Packet Clearing House</a>
+          </span>
+        </td>
+      </tr>
+
+      <tr>
+        <td data-value="SecureDNS">
+          <a href="https://securedns.eu/">SecureDNS</a>
+        </td>
+        <td>
+          <span class="no-text-wrap">
+            <span class="flag-icon flag-icon-nl"></span>
+            The Netherlands
+          </span>
+        </td>
+        <td>
+          <a
+            class="btn-secondary btn-icon"
+            href="https://securedns.eu/#privacy">
+            <span class="fas fa-globe"></span>
+          </a>
+        </td>
+        <td>Hobby Project</td>
+        <td>No</td>
+        <td>DoH, DoT, DNSCrypt</td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>
+          <span class="no-text-wrap">
+            Based on server choice
+          </span>
+        </td>
+        <td>?</td>
+        <td>
+          <span class="no-text-wrap">
+            <a href="https://www.digitalocean.com/">DigitalOcean, Inc.</a>
+          </span>
+        </td>
+      </tr>
+
+      <tr>
+        <td data-value="Snopyta">
+          <a href="https://snopyta.org/service/dns/index.html">Snopyta</a>
+        </td>
+        <td>
+          <span class="no-text-wrap">
+            <span class="flag-icon flag-icon-fi"></span>
+            Finland
+          </span>
+        </td>
+        <td>
+          <a
+            class="btn-secondary btn-icon"
+            href="https://snopyta.org/privacy_policy/">
+            <span class="fas fa-globe"></span>
+          </a>
+        </td>
+        <td>
+          <a data-toggle="tooltip" data-placement="bottom" data-original-title="Part of LibreHosters, &quot;a network of cooperation and solidarity that uses free software to encourage decentralisation through federation and distributed platforms.&quot;" href="https://libreho.st/">
+            Informal collective
+          </a>
+        </td>
+        <td>No</td>
+        <td>DoH, DoT</td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>
+          <span class="no-text-wrap">
+            No
+          </span>
+        </td>
+        <td>?</td>
+        <td>
+          <span class="no-text-wrap">
+            <a href="https://www.hetzner.com/">Hetzner Online GmbH</a>
+          </span>
+        </td>
+      </tr>
+
+      <tr>
+        <td data-value="UncensoredDNS">
+          <a href="https://blog.uncensoreddns.org/">UncensoredDNS</a>
+        </td>
+        <td>Anycast (based in
+          <span class="no-text-wrap">
+            <span class="flag-icon flag-icon-dk"></span>
+            Denmark),
+          </span>
+
+          <span class="no-text-wrap">
+            <span class="flag-icon flag-icon-dk"></span>
+            Denmark,
+            </span>
+
+          <span class="no-text-wrap">
+            <span class="flag-icon flag-icon-us"></span>
+            US
+          </span>
+        </td>
+        <td>
+          <div
+            class="btn-secondary btn-icon"
+            title="&quot;Absolutely nothing is being logged, neither about the users nor the usage of this service. I do keep graphs of the total number of queries, but no personally identifiable information is saved. The data that is saved will never be sold or used for anything except capacity planning of the service.&quot;"
+            data-toggle="tooltip"
+            data-placement="bottom">
+            <span class="fas fa-globe"></span>
+          </div>
+        </td>
+        <td>Hobby Project</td>
+        <td>No</td>
+        <td data-value="doh">DoT</td> <!-- "hack" to group "DoT" values (when sorted) with "DoH" values -->
+        <td>Yes</td>
+        <td>No</td>
+        <td>No</td>
+        <td>?</td>
+        <td>
+          Self,
+          <span class="no-text-wrap">
+            <a href="https://www.teliacompany.com">Telia Company AB</a>
+          </span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
