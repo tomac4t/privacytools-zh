@@ -29,7 +29,7 @@ index.html:64: (po4a::xml)
     - file-encryption.html
     - file-sharing.html
     - file-sync.html
-    - fourteen-eyes.html
+    - ~fourteen-eyes.html~
     - ~header.html~
     - hosting-provider.html
     - instant-messenger.html
@@ -43,7 +43,7 @@ index.html:64: (po4a::xml)
     - paste-services.html
     - privacy-resources.html
     - productivity-tools.html
-    - quotes.html
+    - ~quotes.html~
     - ~resources.html~
     - router-firmware.html
     - search-engines.html
@@ -56,7 +56,7 @@ index.html:64: (po4a::xml)
     - vpn.html
     - warrant-canary.html
     - windows10.html
-  - footer.html
+  - ~footer.html~
   - ~nav.html~
 - pages
   - about.html (exclude)
