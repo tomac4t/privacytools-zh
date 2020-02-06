@@ -4,7 +4,7 @@ This Chinese translation is base on [`f0f37b`](https://github.com/tomac4t/privac
 
 ## Why don't use po4a
 The problem of po4a: [po4a](https://github.com/mquinson/po4a) is a great tool to manage the origin text and the translation. It support the `xhtml` format. In my experience, it doesn't support HTML5 properly, so I have to give up:
-```
+```bash
 $ po4a-gettextize -f xhtml -m index.html -p test.pot -M UTF-8
 index.html:64: (po4a::xml)
                Unexpected closing tag </head> found. The main document may be 
@@ -31,7 +31,7 @@ sed -i s/'src="\/'/'src="..\/..\/'/g `find -mindepth 3 -maxdepth 3 -name "*.html
 ```
 
 ## Clone the generated pages only
-```
+```bash
 git clone -b pages --single-branch https://github.com/tomac4t/privacytools.io.git
 ```
 
